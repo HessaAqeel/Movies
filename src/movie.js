@@ -4,8 +4,8 @@ import Cast from './cast';
 
 class Movie extends Component {
     render() {
-        const movie = this.props.movie;
 
+        const movie = this.props.movie;
         const castData = movie.cast.map(actor => {
             return <Cast actorData={actor} />;
         });
